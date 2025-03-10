@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="txtinput">
+    <button id="update">Update</button>
+
+    <p id="showtxt">Hi</p>
+
+
+
+
+
+
+    <script type="text/javascript">
+        document.getElementById("update").onclick = function () {
+
+            var getText = ""
+            var hello = "Hello "
+
+            getText = document.getElementById("txtinput").value;
+
+            document.getElementById("showtxt").innerHTML = hello + getText;
+
+        }
+
+
+        // Using Array
+        var vehicle = ["Bus", "Van", "Car"]
+
+        console.log(vehicle);
+
+        vehicle.push("Bike");
+
+        vehicle.splice(0,1);
+
+        vehicle.splice(1,1,"Jeep")
+
+
+
+
+    </script>
+</body>
+
+</html>
